@@ -2,9 +2,6 @@
 
 Gracias por visitar este proyecto. Esta invitación la hice para mi hermana y la publico para que cualquiera la pueda usar, adaptar y terminar. Está pensada para parejas que quieran una invitación digital simple, con animaciones, galería y un backend mínimo para confirmar asistencia (RSVP).
 
-![Vista previa](assets/preview.svg)
-
----
 
 Características principales
 
@@ -120,15 +117,7 @@ Esta invitación la hice originalmente para mi hermana que se casa; ahora la pub
 
 Si vas a personalizarla para otra boda, crea una rama o un fork y trabaja allí —me encantará ver mejoras y aportes.
 
-## Vista previa
 
-Agrega una imagen de ejemplo en `assets/preview.png` y se mostrará aquí.
-
-![Vista previa](assets/preview.png)
-
-> Si aún no tienes la imagen, pon un placeholder con ese nombre o súbela más tarde y actualiza el archivo.
-
----
 
 ## Preparar entorno local (Windows + XAMPP)
 
@@ -303,3 +292,4 @@ Elige la licencia que prefieras. Si no estás seguro, `MIT` es una opción permi
 - Preparar un `LICENSE` y plantilla de `README` en inglés si lo necesitas.
 
 Si quieres, procedo a crear `config.example.php`, un `.gitignore` real y confirmar todo para subirlo a GitHub.
+
