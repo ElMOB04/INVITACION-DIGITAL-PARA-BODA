@@ -44,11 +44,6 @@ setx DB_PASSWORD "mi_contraseña"
 
 Luego abre `http://localhost/invitacion5` en tu navegador.
 
----
-
-Publicar en GitHub (recomendado sin archivos pesados)
-
-- Evita subir archivos grandes (videos, mp3s, fotos en alta resolución). Si los necesitas, usa Git LFS o súbelos a un hosting externo y enlázalos.
 
 Comandos básicos desde la carpeta del proyecto:
 
@@ -69,21 +64,12 @@ Cómo contribuir
 - Mantén los cambios puntuales y escribe mensajes de commit claros.
 - No commits con datos personales ni credenciales.
 
-Si quieres que añada un `CONTRIBUTING.md` con más detalles, lo preparo.
-
----
-
 Notas para mantener limpio el repo
 
 - Reduce imágenes grandes a tamaños web (500–1200 px de ancho) y optimiza JPEG/PNG.
 - Para audio/video usa hosting externo o Git LFS.
 
-Herramientas útiles:
 
-- Comprimir imágenes: `magick input.jpg -resize 1200x -quality 82 output.jpg` (ImageMagick)
-- Comprimir audio: `ffmpeg -i input.wav -b:a 128k output.mp3`
-
----
 
 Licencia
 
@@ -292,4 +278,5 @@ Elige la licencia que prefieras. Si no estás seguro, `MIT` es una opción permi
 - Preparar un `LICENSE` y plantilla de `README` en inglés si lo necesitas.
 
 Si quieres, procedo a crear `config.example.php`, un `.gitignore` real y confirmar todo para subirlo a GitHub.
+
 
