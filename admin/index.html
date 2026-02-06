@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Invitaciones Boda</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>Panel de Invitados - Kandy & Jorge</h1>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Invitados</h3>
+                <p id="stat-total-invited">0</p>
+            </div>
+            <div class="stat-card success">
+                <h3>Confirmados</h3>
+                <p id="stat-total-attending">0</p>
+            </div>
+            <div class="stat-card warning">
+                <h3>Pendientes</h3>
+                <p id="stat-pending-invitations">0</p>
+            </div>
+            <div class="stat-card danger">
+                <h3>Rechazados</h3>
+                <p id="stat-declined-invitations">0</p>
+            </div>
+        </section>
+
+        <section class="create-section">
+            <h2>Generar Nueva Invitación</h2>
+            <div class="form-group">
+                <label>Ingresa los nombres de las personas (uno por línea):</label>
+                <textarea id="guest-names" rows="3" placeholder="Juan Pérez&#10;María Gómez"></textarea>
+                <button onclick="createInvitation()">Generar Link</button>
+            </div>
+            <div id="result-area" class="hidden">
+                <p>Link generado para enviar:</p>
+                <div class="link-box">
+                    <input type="text" id="generated-link" readonly>
+                    <button onclick="copyToClipboard()">Copiar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Invitaciones</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombres (Familia/Grupo)</th>
+                            <th>Estado</th>
+                            <th>Asisten</th>
+                            <th>Mensaje</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invitations-table">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
